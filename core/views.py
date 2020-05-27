@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Message
 
 # Create your views here.
 
@@ -14,3 +15,8 @@ def portfolio(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def message_sent(request):
+    
+
+    return render(request, 'message.html')
