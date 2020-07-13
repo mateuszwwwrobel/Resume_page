@@ -28,5 +28,5 @@ urlpatterns = [
     path('portfolio/', views.portfolio, name="portfolio"),
     path('contact/', views.contact, name="contact"),
     path('message/', views.message_sent, name="message"),
-
+    
     ]

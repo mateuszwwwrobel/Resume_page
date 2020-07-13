@@ -28,7 +28,8 @@
       <aside style="background-image: url(/static/img/profile.png); transform: rotate(360deg);"></aside>
       <main>
         <a href="{% url 'core:home' %}" class="home-button"><span class="fa fa-home"></span></a>
-        <h1 class="mb-5">Education</h1>
+        
+        <h1 class="mb-3 mt-4">Education</h1>
         <div class="mb-5">
           <ul class="resume-list">
             <li>
@@ -98,8 +99,58 @@
             
           </ul>
         </div>
-        
+
+
+
+        <h1 class="mb-5">Education</h1>
+        <div class="mb-5">
+          <ul class="resume-list">
+            <p>In July 2017 I finished a Mining and Geology studies with major in Drilling 
+            and Geoengineering at AGH University of Science and Technology in Cracow, Poland, 
+            achieved master degree with distinction.</p>
+            
+            <p>I actively learn programming, especially python. I created few django projects which you can find in 
+              <a href="{%url 'core:portfolio' %}">Portfolio section</a>.</p>
+
+            Recently I start to code, I learn python and some front-end design languages. 
+            My aim is to create few useful application which will make my daily tasks quicker and easier. 
+            Gradually learn new technology, 
+            develop new project and eventually get a job! You can see some of my projects in Portfolio section.
+
+            <li>
+              <h3>MSc Drilling and Geoengineering</h3>
+              <h5>AGH University of Science and Technology</h5>
+              <p class="date">February 2016 – June 2017	</p>
+              <p class="text-dark">Diploma thesis: ‘Surfactants in completion and workover fluids.’ </p>
+              <p class="text-dark">Modules included but not limited to:
+              Drilling Fluids, Drilling Technologies, Geothermal Energy, Trenchless Technique and Technologies, Technology of 
+              Sealing Slurries, Environmental Management, Geoengineering, Automation in Drilling, Management and Marketing.</p>
+            </li>
+            <li>
+              <h3>BSc Mining and Geology</h3>
+              <h5>AGH University of Science and Technology</h5>
+              <p class="date">October 2012 – February 2016</p>
+              <p class="text-dark">Diploma thesis: ‘Reusing barite from drilling mud. Drilling mud cleaning system project.’  </p>
+              <p class="text-dark">Modules included but not limited to:
+              Drilling Wells Design, Technology of Drilling, Gas and Oil Fields Extraction, Drilling Fluid Technology, Oil Transport and Storing, HDD Technology, 
+              Extraction of Groundwater, Gas Engineering, Fluid Flow in Reservoirs, Geothermal Management and Deposits, Geoengineering, 
+              Thermodynamics, Mechanics of Fluids, Mechanics, Hydrogeology, Geophysics, Geology, Chemistry, IT, Mathematics, Statistics.</p>
+            </li>
+
+            <li>
+              <h3>Technician Economist</h3>
+              <h5>Economic Technician Secondary School</h5>
+              <p class="date">October 2007 – May 2011</p>
+              <p class="text-dark">Europass - Certificate of competences of Technician Economist. </p>
+            </li>
+            
+          </ul>
+        </div>
+
+
+
+
       </main>
     </div>
 
-{% endblock content %}
+{% endblock content %} 
