@@ -9,7 +9,7 @@
       <div class="offcanvas_menu" id="offcanvas_menu">
         <ul class="mb-5">
           <li><a href="{% url 'core:home' %}">Bio</a></li>
-          <li><a href="{% url 'core:portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'core:portfolio' %}">Projects</a></li>
           <li class="active"><a href="{% url 'core:resume' %}">Resume</a></li>
           <li><a href="{% url 'core:contact' %}">Contact</a></li>
         </ul>
@@ -29,128 +29,204 @@
       <main>
         <a href="{% url 'core:home' %}" class="home-button"><span class="fa fa-home"></span></a>
         
-        <h1 class="mb-3 mt-4">Education</h1>
-        <div class="mb-5">
-          <ul class="resume-list">
-            <li>
-              <h3>MSc Drilling and Geoengineering</h3>
-              <h5>AGH University of Science and Technology</h5>
-              <p class="date">February 2016 – June 2017	</p>
-              <p class="text-dark">Diploma thesis: ‘Surfactants in completion and workover fluids.’ </p>
-              <p class="text-dark">Modules included but not limited to:
-              Drilling Fluids, Drilling Technologies, Geothermal Energy, Trenchless Technique and Technologies, Technology of 
-              Sealing Slurries, Environmental Management, Geoengineering, Automation in Drilling, Management and Marketing.</p>
-            </li>
-            <li>
-              <h3>BSc Mining and Geology</h3>
-              <h5>AGH University of Science and Technology</h5>
-              <p class="date">October 2012 – February 2016</p>
-              <p class="text-dark">Diploma thesis: ‘Reusing barite from drilling mud. Drilling mud cleaning system project.’  </p>
-              <p class="text-dark">Modules included but not limited to:
-              Drilling Wells Design, Technology of Drilling, Gas and Oil Fields Extraction, Drilling Fluid Technology, Oil Transport and Storing, HDD Technology, 
-              Extraction of Groundwater, Gas Engineering, Fluid Flow in Reservoirs, Geothermal Management and Deposits, Geoengineering, 
-              Thermodynamics, Mechanics of Fluids, Mechanics, Hydrogeology, Geophysics, Geology, Chemistry, IT, Mathematics, Statistics.</p>
-            </li>
 
-            <li>
-              <h3>Technician Economist</h3>
-              <h5>Economic Technician Secondary School</h5>
-              <p class="date">October 2007 – May 2011</p>
-              <p class="text-dark">Europass - Certificate of competences of Technician Economist. </p>
-            </li>
+        <!-- TEXT -->
+        <div class="container text-muted">
+          <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a class="nav-link active" href="#education" data-toggle='tab'>Ecucation</a>
+            <a class="nav-link" href="#experience" data-toggle='tab'>Experience</a>
+            <a class="nav-link" href="#technologies" data-toggle='tab'>Skills & Technologies</a>
+          </nav>
+
+          <div class="tab-content py-3 text-justify">
+            <div class="tab-pane mb-5 active" id="education">
+              <ul class="resume-list">
+                <li>
+                  <h3 class="mt-3">Junior Python Developer</h3>
+                  <h5>InfoShare Academy</h5>
+                  <p class="date">August 2020 – March 2021</p>
+                  </p>
+                </li>
+                <li>
+                  <h3 class="mt-5">MSc Drilling and Geoengineering</h3>
+                  <h5>AGH University of Science and Technology</h5>
+                  <p class="date">February 2016 – June 2017	</p>
+                  <p class="text-dark">Diploma thesis: ‘Surfactants in completion and workover fluids.’ </p>
+                  <!-- <p class="text-dark">Modules included but not limited to:</p>
+                  <p class="text-dark">Drilling Fluids, Drilling Technologies, Geothermal Energy, Trenchless Technique and Technologies, Technology of 
+                  Sealing Slurries, Environmental Management, Geoengineering, Automation in Drilling, Management and Marketing.</p> -->
+                </li>
+                <li>
+                  <h3 class="mt-5">BSc Mining and Geology</h3>
+                  <h5>AGH University of Science and Technology</h5>
+                  <p class="date">October 2012 – February 2016</p>
+                  <p class="text-dark">Diploma thesis: ‘Reusing barite from drilling mud. Drilling mud cleaning system project.’  </p>
+                  <!-- <p class="text-dark">Modules included but not limited to:</p>
+                  <p class="text-dark">Drilling Wells Design, Technology of Drilling, Gas and Oil Fields Extraction, Drilling Fluid Technology, Oil Transport and Storing, HDD Technology, 
+                  Extraction of Groundwater, Gas Engineering, Fluid Flow in Reservoirs, Geothermal Management and Deposits, Geoengineering, 
+                  Thermodynamics, Mechanics of Fluids, Mechanics, Hydrogeology, Geophysics, Geology, Chemistry, IT, Mathematics, Statistics.</p> -->
+                </li>
             
-          </ul>
+                <li>
+                  <h3 class="mt-5">Technician Economist</h3>
+                  <h5>Economic Technician Secondary School</h5>
+                  <p class="date">October 2007 – May 2011</p>
+                  <p class="text-dark">Europass - Certificate of competences of Technician Economist. </p>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="tab-pane mb-5" id="experience">
+              <ul class="resume-list">
+                <li>
+                  <h3>Field and Laboratory Technician</h3>
+                  <h5>Raeburn Drilling and Geotechnical</h5>
+                  <p class="date">January 2019 - Present</p>
+                  <p class="text-dark">Site investigations and laboratory testing. <!-- CBR tests, plate load tests, SRT tests, NDG tests. Working at UCAS  accredited laboratory based in Aberdeen. --></p>
+                </li>
+                <li>
+                  <h3>Self Employed</h3>
+                  <h5>Subcontractor for Dandara Homes</h5>
+                  <p class="date">June 2018 - December 2019</p>
+                  <p class="text-dark">Bricklaying work on construction sites in Aberdeen city.</p>
+                </li>
+                <li>
+                  <h3>Engineering Surveyor</h3>
+                  <h5>G79 Geodesy(company operate in southern Poland)</h5>
+                  <p class="date">January 2018 – June 2018</p>
+                  <p class="text-dark">Operation on geodetic devices on construction sites around Bielsko-Biała city.</p>
+                  <!-- <p class="text-dark">Taking part in rebuilding road 44 in Oswiecim, Poland. Extension of Magna-Formpol production hall in Tychy, Poland. Handling geodetic devices: total station, GPS. Operating on SurvCe and Leica software, AutoCAD.</p> -->
+                </li>
+                <li>
+                  <h3>Assistant Geologist</h3>
+                  <h5>Geo-Partner(company operate in Poland)</h5>
+                  <p class="date">October 2017 – January 2018</p>
+                  <p class="text-dark">Site investigations.</p>
+                </li>
+                <li>
+                  <h3>Miner of Borehole Exploatation - Summer Internship</h3>
+                  <h5>PGNiG Inc. (main gas provider in Poland)</h5>
+                  <p class="date">June 2017 – October 2017</p>
+                  <p class="text-dark">Familiarization with work in the Rylowa natural gas mine.</p>
+                  <!-- <p class="text-dark">Taking care of production process on gas mine Rylowa-Rajsko in Poland. Learning how gas mine daily operating works. Preparing different documents. Laboratory analysis of chelate.</p> -->
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="tab-pane mb-5 text-dark" id="technologies">
+              <p class="my-3">Python</p>
+              <div class="progress">
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="my-3">Django</p>
+              <div class="progress">
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="my-3">SQL</p>
+              <div class="progress">
+                <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="my-3">Bootstrap 4</p>
+              <div class="progress">
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="my-3">Beautiful Soup</p>
+              <div class="progress">
+                <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="my-3">Linux</p>
+              <div class="progress">
+                <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-
-
-        <h1 class="mb-5">Experience</h1>
-        <div class="mb-5">
-          <ul class="resume-list">
-            <li>
-              <h3>Site and Laboratory Technician</h3>
-              <h5>Raeburn Drilling and Geotechnical</h5>
-              <p class="date">January 2019 - Present</p>
-              <p class="text-dark">Site investigations. CBR tests, plate load tests, SRT tests, NDG tests. Working at UCAS  accredited laboratory based in Aberdeen.</p>
-            </li>
-            <li>
-              <h3>Self Employed</h3>
-              <h5>Contractor for Dandara Homes</h5>
-              <p class="date">June 2018 - December 2019</p>
-              <p class="text-dark">Setting up foundation, building houses. Installing window cills, lintels. Checking if everything is builds within regulation.</p>
-            </li>
-            <li>
-              <h3>Engineering Surveyor</h3>
-              <h5>G79 Geodesy(company operate in southern Poland)</h5>
-              <p class="date">January 2018 – June 2018</p>
-              <p class="text-dark">Taking part in rebuilding road 44 in Oswiecim, Poland. Extension of Magna-Formpol production hall in Tychy, Poland. Handling geodetic devices: total station, GPS. Operating on SurvCe and Leica software, AutoCAD.</p>
-            </li>
-            <li>
-              <h3>Assistant Geologist</h3>
-              <h5>Geo-Partner(company operate in Poland)</h5>
-              <p class="date">October 2017 – January 2018</p>
-              <p class="text-dark">Soil testing using mainly a light dynamic penetrometer.</p>
-            </li>
-            <li>
-              <h3>Miner of Borehole Exploatation - Summer Internship</h3>
-              <h5>PGNiG Inc.(main gas provider in Poland)</h5>
-              <p class="date">June 2017 – October 2017</p>
-              <p class="text-dark">Taking care of production process on gas mine Rylowa-Rajsko in Poland. Learning how gas mine daily operating works. Preparing different documents. Laboratory analysis of chelate.</p>
-            </li>
-            
-          </ul>
-        </div>
-
-
-
-        <h1 class="mb-5">Education</h1>
-        <div class="mb-5">
-          <ul class="resume-list">
-            <p>In July 2017 I finished a Mining and Geology studies with major in Drilling 
-            and Geoengineering at AGH University of Science and Technology in Cracow, Poland, 
-            achieved master degree with distinction.</p>
-            
-            <p>I actively learn programming, especially python. I created few django projects which you can find in 
-              <a href="{%url 'core:portfolio' %}">Portfolio section</a>.</p>
-
-            Recently I start to code, I learn python and some front-end design languages. 
-            My aim is to create few useful application which will make my daily tasks quicker and easier. 
-            Gradually learn new technology, 
-            develop new project and eventually get a job! You can see some of my projects in Portfolio section.
-
-            <li>
-              <h3>MSc Drilling and Geoengineering</h3>
-              <h5>AGH University of Science and Technology</h5>
-              <p class="date">February 2016 – June 2017	</p>
-              <p class="text-dark">Diploma thesis: ‘Surfactants in completion and workover fluids.’ </p>
-              <p class="text-dark">Modules included but not limited to:
-              Drilling Fluids, Drilling Technologies, Geothermal Energy, Trenchless Technique and Technologies, Technology of 
-              Sealing Slurries, Environmental Management, Geoengineering, Automation in Drilling, Management and Marketing.</p>
-            </li>
-            <li>
-              <h3>BSc Mining and Geology</h3>
-              <h5>AGH University of Science and Technology</h5>
-              <p class="date">October 2012 – February 2016</p>
-              <p class="text-dark">Diploma thesis: ‘Reusing barite from drilling mud. Drilling mud cleaning system project.’  </p>
-              <p class="text-dark">Modules included but not limited to:
-              Drilling Wells Design, Technology of Drilling, Gas and Oil Fields Extraction, Drilling Fluid Technology, Oil Transport and Storing, HDD Technology, 
-              Extraction of Groundwater, Gas Engineering, Fluid Flow in Reservoirs, Geothermal Management and Deposits, Geoengineering, 
-              Thermodynamics, Mechanics of Fluids, Mechanics, Hydrogeology, Geophysics, Geology, Chemistry, IT, Mathematics, Statistics.</p>
-            </li>
-
-            <li>
-              <h3>Technician Economist</h3>
-              <h5>Economic Technician Secondary School</h5>
-              <p class="date">October 2007 – May 2011</p>
-              <p class="text-dark">Europass - Certificate of competences of Technician Economist. </p>
-            </li>
-            
-          </ul>
-        </div>
-
-
-
 
       </main>
     </div>
 
 {% endblock content %} 
+
+
+      
+<nav class="nav justify-content-center nav-pils flex-column flex-md-row">
+  <a class="nav-link active" href="#education" data-toggle='tab'>Ecucation</a>
+  <a class="nav-link" href="#experience" data-toggle='tab'>Experience</a>
+  <a class="nav-link" href="#technologies" data-toggle='tab'>Technologies</a>
+</nav>
+
+
+<h1 class="mb-3 mt-4">Education</h1>
+<div class="tab-pane mb-5" id="education">
+  <ul class="resume-list">
+    <li>
+      <h3>MSc Drilling and Geoengineering</h3>
+      <h5>AGH University of Science and Technology</h5>
+      <p class="date">February 2016 – June 2017	</p>
+      <p class="text-dark">Diploma thesis: ‘Surfactants in completion and workover fluids.’ </p>
+      <p class="text-dark">Modules included but not limited to:
+      Drilling Fluids, Drilling Technologies, Geothermal Energy, Trenchless Technique and Technologies, Technology of 
+      Sealing Slurries, Environmental Management, Geoengineering, Automation in Drilling, Management and Marketing.</p>
+    </li>
+    <li>
+      <h3>BSc Mining and Geology</h3>
+      <h5>AGH University of Science and Technology</h5>
+      <p class="date">October 2012 – February 2016</p>
+      <p class="text-dark">Diploma thesis: ‘Reusing barite from drilling mud. Drilling mud cleaning system project.’  </p>
+      <p class="text-dark">Modules included but not limited to:
+      Drilling Wells Design, Technology of Drilling, Gas and Oil Fields Extraction, Drilling Fluid Technology, Oil Transport and Storing, HDD Technology, 
+      Extraction of Groundwater, Gas Engineering, Fluid Flow in Reservoirs, Geothermal Management and Deposits, Geoengineering, 
+      Thermodynamics, Mechanics of Fluids, Mechanics, Hydrogeology, Geophysics, Geology, Chemistry, IT, Mathematics, Statistics.</p>
+    </li>
+
+    <li>
+      <h3>Technician Economist</h3>
+      <h5>Economic Technician Secondary School</h5>
+      <p class="date">October 2007 – May 2011</p>
+      <p class="text-dark">Europass - Certificate of competences of Technician Economist. </p>
+    </li>
+    
+  </ul>
+</div>
+
+
+<h1 class="mb-5">Experience</h1>
+<div class="tab-pane mb-5" id="experience">
+  <ul class="resume-list">
+    <li>
+      <h3>Site and Laboratory Technician</h3>
+      <h5>Raeburn Drilling and Geotechnical</h5>
+      <p class="date">January 2019 - Present</p>
+      <p class="text-dark">Site investigations. CBR tests, plate load tests, SRT tests, NDG tests. Working at UCAS  accredited laboratory based in Aberdeen.</p>
+    </li>
+    <li>
+      <h3>Self Employed</h3>
+      <h5>Contractor for Dandara Homes</h5>
+      <p class="date">June 2018 - December 2019</p>
+      <p class="text-dark">Setting up foundation, building houses. Installing window cills, lintels. Checking if everything is builds within regulation.</p>
+    </li>
+    <li>
+      <h3>Engineering Surveyor</h3>
+      <h5>G79 Geodesy(company operate in southern Poland)</h5>
+      <p class="date">January 2018 – June 2018</p>
+      <p class="text-dark">Taking part in rebuilding road 44 in Oswiecim, Poland. Extension of Magna-Formpol production hall in Tychy, Poland. Handling geodetic devices: total station, GPS. Operating on SurvCe and Leica software, AutoCAD.</p>
+    </li>
+    <li>
+      <h3>Assistant Geologist</h3>
+      <h5>Geo-Partner(company operate in Poland)</h5>
+      <p class="date">October 2017 – January 2018</p>
+      <p class="text-dark">Soil testing using mainly a light dynamic penetrometer.</p>
+    </li>
+    <li>
+      <h3>Miner of Borehole Exploatation - Summer Internship</h3>
+      <h5>PGNiG Inc.(main gas provider in Poland)</h5>
+      <p class="date">June 2017 – October 2017</p>
+      <p class="text-dark">Taking care of production process on gas mine Rylowa-Rajsko in Poland. Learning how gas mine daily operating works. Preparing different documents. Laboratory analysis of chelate.</p>
+    </li>
+    
+  </ul>
+</div>
